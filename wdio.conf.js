@@ -1,4 +1,4 @@
-import { path } from "path";
+import path from "path";
 
 export const config = {
     //
@@ -56,7 +56,7 @@ export const config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:platformVersion': '12.0',
+        'appium:platformVersion': '11.0',
         'appium:deviceName': 'Pixel 4',
         'appium:automationName': 'UiAutomator2',
         'appium:app': path.join(process.cwd(), 'app/android/ApiDemos-debug.apk')
