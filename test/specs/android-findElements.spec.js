@@ -24,14 +24,15 @@ describe('Android Elements Test', () => {
         await $('//android.widget.TextView[@content-desc="Alert Dialogs"]')
         .click();
         // Find by resource id
-        await $('//android.widget.Button[@resource-id="io.appium.android.apis:id/select_button"]')
-        .click();
+        await $('//android.widget.Button[@resource-id=\
+        // "io.appium.android.apis:id/select_button"]').click();
     
         // Find by resource text
         await $('//android.widget.TextView[@text="Command two"]').click();
 
         // assertion
-        const dialog = await $('//android.widget.TextView[@resource-id="android:id/message"]')
+        const dialog = await $('//android.widget.TextView[@resource-id=\
+        // "android:id/message"]')
         await expect(dialog).toHaveText('You selected: 1 , Command two');
     })
 
