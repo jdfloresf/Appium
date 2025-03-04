@@ -1,3 +1,5 @@
+import { driver, expect, $ } from '@wdio/globals'
+
 describe('Android Native Feature Test', () => {
     it('Access an Activity directy', async () => {
         // Access activity
