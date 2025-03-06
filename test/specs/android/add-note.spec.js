@@ -1,5 +1,5 @@
-import expect from '@wdio/globals'
-import addNoteScreen from './screenobjects/android/add-note-screen';
+import addNoteScreen from '../../screenobjects/android/add-note-screen';
+import { expect } from '@wdio/globals';
 
 describe('Add Notes', () => {
     it('Skip tutorial', async () => {

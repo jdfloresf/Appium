@@ -1,4 +1,5 @@
-import deleteNoteScreen from './screenobjects/android/delete-note-screen';
+import deleteNoteScreen from '../../screenobjects/android/delete-note-screen';
+import { expect } from '@wdio/globals';
 
 describe('Add Notes', () => {
     it('Delete a note and check the note in trashcan', async () => {
