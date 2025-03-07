@@ -1,8 +1,9 @@
 import addNoteScreen from "./add-note-screen";
+import tutorialScreen from "./tutorial-screen";
 
 class DeleteNoteScreen {
     async skipTutorial() {
-        await addNoteScreen.skipBtn.click();
+        await tutorialScreen.skipBtn.click();
     }
 
     async addAndSaveNote(heading, content) {

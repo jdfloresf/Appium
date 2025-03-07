@@ -1,9 +1,10 @@
 import addNoteScreen from '../../screenobjects/android/add-note-screen';
+import tutorialScreen from '../../screenobjects/android/tutorial-screen';
 import { expect } from '@wdio/globals';
 
 describe('Add Notes', () => {
     it('Skip tutorial', async () => {
-        await addNoteScreen.skipBtn.click();
+        await tutorialScreen.skipBtn.click();
 
         await expect(addNoteScreen.addNoteText).toBeDisplayed();
     })
