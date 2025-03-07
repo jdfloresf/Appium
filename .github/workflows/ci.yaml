@@ -17,8 +17,8 @@ jobs:
 
         - name: 🧪 Test
           env:
-            user: ${{ secrets.BS_USER }}
-            key: ${{ secrets.BS_KEY }}
+            BROWSERSTACK_USERNAME: ${{ secrets.BS_USER }}
+            BROWSERSTACK_ACCESS_KEY: ${{ secrets.BS_KEY }}
           run:  npx wdio config/wdio.android.bs.conf.js --spec ../test/specs/android/delete-note.spec.js
 
         - name: 📦 Upload Logs
