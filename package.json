@@ -2,6 +2,7 @@
   "name": "wdio-appium",
   "type": "module",
   "devDependencies": {
+    "@wdio/allure-reporter": "^9.11.0",
     "@wdio/appium-service": "^9.10.1",
     "@wdio/browserstack-service": "^9.11.0",
     "@wdio/cli": "^9.10.1",
@@ -14,5 +15,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.33.0"
   }
 }
