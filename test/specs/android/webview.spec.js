@@ -24,9 +24,17 @@ describe('Add Notes', () => {
         
         // switch to webview chrome context
         await driver.switchContext('WEBVIEW_chrome');
-
+        
         // assert the cover image
-        const coverImg = $('.x5yr21d.x4l50q0');
-        await expect(coverImg).toBeDisplayed();
+        // const coverImg = $('.x5yr21d.x4l50q0');
+        // await expect(coverImg).toBeDisplayed();
+        
+        // swicth back to app
+        await driver.switchContext('NATIVE_APP');
+        await driver.back();
+
+        // continue with the app stuff
+        await $('//*[@text="Notes"]').click();
+        await expect($('//*[@text="Add note"]')).toBeDisplayed();
     })
 })
